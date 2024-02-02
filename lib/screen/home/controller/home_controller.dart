@@ -5,6 +5,7 @@ import 'package:getx/utils/api_helper.dart';
 class HomeController extends GetxController {
   RxList<HomeModel> productList = <HomeModel>[].obs;
   RxList<HomeModel> cartList = <HomeModel>[].obs;
+  RxInt total = 0.obs;
 
   Future<void> getProductData() async {
     List<HomeModel>? list = await APIHelper.apiHelper.productApiCall();

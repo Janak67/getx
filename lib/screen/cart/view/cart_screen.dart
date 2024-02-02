@@ -53,6 +53,20 @@ class _CartScreenState extends State<CartScreen> {
                 );
               },
             ),
+            Obx(
+              () => Align(
+                alignment: Alignment.center,
+                child: Text('Total Quantity : ${controller.cartList.length}',
+                    style: const TextStyle(fontSize: 18)),
+              ),
+            ),
+            Obx(
+              () => Align(
+                alignment: Alignment.center,
+                child: Text('Total Price : ${controller.total}',
+                    style: const TextStyle(fontSize: 18)),
+              ),
+            ),
           ],
         ),
       ),
