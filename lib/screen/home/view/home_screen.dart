@@ -51,17 +51,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     Get.toNamed('detail',
                         arguments: controller.productList[index]);
                   },
-                  child: Container(
-                    width: double.infinity,
-                    margin: const EdgeInsets.all(10),
+                  child: Padding(
                     padding: const EdgeInsets.all(10),
-                    decoration:
-                        BoxDecoration(borderRadius: BorderRadius.circular(15)),
                     child: Row(
                       children: [
                         Image.network('${controller.productList[index].image}',
                             height: 150, width: 120),
-                        const SizedBox(width: 10),
+                        const SizedBox(width: 15),
                         SizedBox(
                           width: 220,
                           child: Text(
