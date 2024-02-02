@@ -24,6 +24,7 @@ class _CartScreenState extends State<CartScreen> {
               '   Saved for later (item)',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 23),
             ),
+            const Divider(),
             Obx(
               () {
                 return Expanded(
