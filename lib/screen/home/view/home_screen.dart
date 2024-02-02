@@ -62,10 +62,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         Image.network('${controller.productList[index].image}',
                             height: 150, width: 120),
                         const SizedBox(width: 10),
-                        // Text(
-                        //   '${controller.productList[index].title}',
-                        //   overflow: TextOverflow.ellipsis,
-                        // ),
+                        SizedBox(
+                          width: 220,
+                          child: Text(
+                            '${controller.productList[index].title}',
+                            overflow: TextOverflow.ellipsis,
+                            maxLines: 3,
+                            style: const TextStyle(
+                                fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                        ),
                       ],
                     ),
                   ),
