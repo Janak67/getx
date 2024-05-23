@@ -78,7 +78,11 @@ class _DetailScreenState extends State<DetailScreen> {
                 Center(
                   child: ElevatedButton(
                     onPressed: () {
-                      controller.cartList.add(model);
+                      HomeModel h1 = HomeModel(
+                          title: model.title,
+                          image: model.image,
+                          price: model.price);
+                      controller.cartList.add(h1);
                       Get.back();
                       Get.snackbar('Add to Cart', 'Success',
                           duration: const Duration(milliseconds: 1000));

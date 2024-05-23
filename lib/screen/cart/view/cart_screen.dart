@@ -64,7 +64,7 @@ class _CartScreenState extends State<CartScreen> {
             Obx(
               () => Align(
                 alignment: Alignment.center,
-                child: Text('Total Price : ${controller.total}',
+                child: Text('Total Price : ${controller.totalPrice}',
                     style: const TextStyle(fontSize: 18)),
               ),
             ),
